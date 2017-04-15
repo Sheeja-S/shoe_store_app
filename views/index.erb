@@ -1,0 +1,24 @@
+
+<form action="/" method="post"
+<label for ="name">Shoe Brands</label>
+<input id="name" name="name" type="text">
+<button type="submit">Add Shoe Brand</button>
+</form>
+<hr />
+<% @shoe_brands.each() do |shoe| %>
+     <li><a href="/shoe_brand_info/<%= shoe.id()%>"> <%= shoe.name %> </a>
+     <a href="/shoe_brand/<%= shoe.id() %>/edit">Update Shoe Brand</a></li>
+<% end %>
+
+<hr />
+<form action="/shoe_stores" method="post"
+<label for ="name">Shoe Stores</label>
+<input id="name" name="name" type="text">
+<button type="submit">Add Shoe Store</button>
+</form>
+<hr />
+
+<% @shoe_stores.each() do |shoe| %>
+    <li><a href="/shoe_store_info/<%= shoe.id()%>"><%= shoe.name %> </a>
+        <a href="/shoe_store/<%= shoe.id() %>/edit">Update this shoe_store name</a></li>
+    <% end %>

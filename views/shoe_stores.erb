@@ -1,0 +1,5 @@
+<% @shoe_stores.each() do |shoe| %>
+<li>
+  <%= shoe.name %> <a href="/shoe_store/<%= shoe.id() %>/edit"Update shoe store</a>
+</li>
+<% end %>
