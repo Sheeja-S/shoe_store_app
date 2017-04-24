@@ -1,0 +1,47 @@
+.format1
+{
+  font-family: 'Georgia';
+  font-size: 20px;
+  color: green;
+}
+
+.button1
+{
+  background-color: #4CAF50;
+}
+
+.list
+{
+  font-size: 20px;
+  color:pink;
+}
+
+.button2
+{
+  background-color: #f44336;
+  font-size: 18px;
+}
+
+.format2
+{
+  font-family: 'Georgia';
+  font-size: 20px;
+  color: red;
+}
+
+h1
+{
+  margin-left: 45%;
+  color: purple;
+  font-family:cursive;
+}
+
+a
+{
+  font-size: 20px;
+}
+
+body
+{
+  background-image:url('/image/nike2.jpg');
+}

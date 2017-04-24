@@ -5,25 +5,24 @@
 
      <% @shoe_stores.each() do |store| %>
        <div class="checkbox">
-         <label>
+         <label class="format1">
            <input type="checkbox" name="shoe_stores_ids[]"
            value="<%= store.id() %>"><%= store.name() %>
          </label>
        </div>
      <% end %>
-     <button type="submit">Add Shoe</button>
+     <button class="button2" type="submit">Add Shoe</button>
    </form>
  <% end %>
 
 <hr>
 
   <% if @shoe.shoe_stores().any?() %>
-   <h3>List of Stores where </strong>
-     is available</h3>
+   <h3>List of Stores available</h3>
 
    <ul>
      <% @shoe.shoe_stores().each() do |shoe| %>
-       <li><%= shoe.name() %></li>
+       <li class="list"><%= shoe.name() %></li>
      <% end %>
    </ul>
  <% else %>

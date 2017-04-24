@@ -35,7 +35,6 @@ end
 get("/shoe_brand_info/:id") do
    @shoe = ShoeBrand.find(params.fetch("id").to_i())
    @shoe_stores = ShoeStore.all()
-
    erb(:shoe_brand_info)
  end
 
